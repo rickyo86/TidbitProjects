@@ -1,0 +1,223 @@
+{
+    "row": {
+        "1": {
+            "Address":               "7940 HICKAM AVENUE",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/16/15 2:35(-1)",
+            "State":                 "NV",
+            "Status":                "AVAILABLE",
+            "Task":                  "Updated BPO - Single",
+            "TotalPhotos":           152,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.OpenEventForm&property_id=12310659&eventTrackingID=287289535",
+            "Zip":                   89129
+        },
+        "2": {
+            "Address":               "4604 PROVIDENCE LN",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/16/15 11:24(-1)",
+            "State":                 "NV",
+            "Status":                "EVICTION",
+            "Task":                  "Offer Relocation Assistance Amount (Agent) - Unit 1",
+            "TotalPhotos":           1,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.OfferRelocationAssistanceAmountAgent&property_id=13703357&eventTrackingID=286806864",
+            "Zip":                   89107
+        },
+        "3": {
+            "Address":               "8313 HATTERAS CT",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/17/15 2:40(-2)",
+            "State":                 "NV",
+            "Status":                "PENDING",
+            "Task":                  "Acknowledge Listing Supplement",
+            "TotalPhotos":           57,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.AcknowledgeListingSupplement&property_id=13759031&eventTrackingID=287795917",
+            "Zip":                   89145
+        },
+        "4": {
+            "Address":               "2451 NORTH RAINBOW BLVD UNIT 2042",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/17/15 1:16(-2)",
+            "State":                 "NV",
+            "Status":                "AVAILABLE",
+            "Task":                  "MLS Number / MLS Sheet",
+            "TotalPhotos":           34,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.MLSNumberMLSSheet&property_id=13715293&eventTrackingID=287876605",
+            "Zip":                   89108
+        },
+        "5": {
+            "Address":               "6800 EAST LAKE MEAD BLVD 2085",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/17/15 2:57(-2)",
+            "State":                 "NV",
+            "Status":                "PENDING",
+            "Task":                  "Create Contract Package",
+            "TotalPhotos":           109,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.OpenEventForm&property_id=13635629&eventTrackingID=287891335",
+            "Zip":                   89156
+        },
+        "6": {
+            "Address":               "6953 CLOUD CIRCLE",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/18/15 2:28(-3)",
+            "State":                 "NV",
+            "Status":                "AVAILABLE",
+            "Task":                  "Monthly Marketing Report",
+            "TotalPhotos":           60,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.MonthlyMarketingReport&property_id=13755184&eventTrackingID=287337420",
+            "Zip":                   89145
+        },
+        "7": {
+            "Address":               "8313 HATTERAS CT",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/18/15 10:21(-3)",
+            "State":                 "NV",
+            "Status":                "PENDING",
+            "Task":                  "Send Signed Contracts",
+            "TotalPhotos":           57,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.sendSignedContracts&property_id=13759031&eventTrackingID=287726947",
+            "Zip":                   89145
+        },
+        "8": {
+            "Address":               "1412 BIG VALLEY LN",
+            "City":                  "NORTH LAS VEGAS",
+            "DueCompleted":          "01/19/15 2:30(-4)",
+            "State":                 "NV",
+            "Status":                "AVAILABLE",
+            "Task":                  "Weekly Property Inspection",
+            "TotalPhotos":           356,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.WeeklyPropertyInspection&property_id=12216598&eventTrackingID=287339489",
+            "Zip":                   89081
+        },
+        "9": {
+            "Address":               "7940 HICKAM AVENUE",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/19/15 2:30(-4)",
+            "State":                 "NV",
+            "Status":                "AVAILABLE",
+            "Task":                  "Weekly Property Inspection",
+            "TotalPhotos":           152,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.WeeklyPropertyInspection&property_id=12310659&eventTrackingID=287339556",
+            "Zip":                   89129
+        },
+        "10": {
+            "Address":               "4523 POWELL POINT WAY",
+            "City":                  "NORTH LAS VEGAS",
+            "DueCompleted":          "01/19/15 2:30(-4)",
+            "State":                 "NV",
+            "Status":                "DO NOT MARKET",
+            "Task":                  "Weekly Property Inspection",
+            "TotalPhotos":           83,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.WeeklyPropertyInspection&property_id=13651195&eventTrackingID=287371208",
+            "Zip":                   89031
+        },
+        "11": {
+            "Address":               "1220 WINDWALKER AVE",
+            "City":                  "NORTH LAS VEGAS",
+            "DueCompleted":          "01/19/15 2:30(-4)",
+            "State":                 "NV",
+            "Status":                "PENDING",
+            "Task":                  "Weekly Property Inspection",
+            "TotalPhotos":           125,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.WeeklyPropertyInspection&property_id=13701089&eventTrackingID=287374994",
+            "Zip":                   89081
+        },
+        "12": {
+            "Address":               "2451 NORTH RAINBOW BLVD UNIT 2042",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/19/15 2:30(-4)",
+            "State":                 "NV",
+            "Status":                "AVAILABLE",
+            "Task":                  "Weekly Property Inspection",
+            "TotalPhotos":           34,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.WeeklyPropertyInspection&property_id=13715293&eventTrackingID=287377314",
+            "Zip":                   89108
+        },
+        "13": {
+            "Address":               "4509 INEZ DR",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/19/15 2:30(-4)",
+            "State":                 "NV",
+            "Status":                "PENDING",
+            "Task":                  "Weekly Property Inspection",
+            "TotalPhotos":           153,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.WeeklyPropertyInspection&property_id=13717768&eventTrackingID=287377564",
+            "Zip":                   89130
+        },
+        "14": {
+            "Address":               "2112 SUN AVE",
+            "City":                  "NORTH LAS VEGAS",
+            "DueCompleted":          "01/19/15 2:30(-4)",
+            "State":                 "NV",
+            "Status":                "AVAILABLE",
+            "Task":                  "Weekly Property Inspection",
+            "TotalPhotos":           50,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.WeeklyPropertyInspection&property_id=13788449&eventTrackingID=287381064",
+            "Zip":                   89030
+        },
+        "15": {
+            "Address":               "4029 CLOVE HITCH ST",
+            "City":                  "NORTH LAS VEGAS",
+            "DueCompleted":          "01/19/15 2:30(-4)",
+            "State":                 "NV",
+            "Status":                "AVAILABLE",
+            "Task":                  "Weekly Property Inspection",
+            "TotalPhotos":           86,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.WeeklyPropertyInspection&property_id=13788790&eventTrackingID=287381164",
+            "Zip":                   89032
+        },
+        "16": {
+            "Address":               "8241 LAREDO ST",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/19/15 6:42(-4)",
+            "State":                 "NV",
+            "Status":                "EVICTION",
+            "Task":                  "Weekly Occupancy Status - Unit 1",
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.weeklyOccupancyStatus&property_id=13665896&eventTrackingID=287414432",
+            "Zip":                   89117
+        },
+        "17": {
+            "Address":               "4604 PROVIDENCE LN",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/19/15 6:42(-4)",
+            "State":                 "NV",
+            "Status":                "EVICTION",
+            "Task":                  "Weekly Occupancy Status - Unit 1",
+            "TotalPhotos":           1,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.weeklyOccupancyStatus&property_id=13703357&eventTrackingID=287415029",
+            "Zip":                   89107
+        },
+        "18": {
+            "Address":               "4509 INEZ DR",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/19/15 9:14(-4)",
+            "State":                 "NV",
+            "Status":                "PENDING",
+            "Task":                  "Confirm HomePath Materials",
+            "TotalPhotos":           153,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.ConfirmHomePathMaterials&property_id=13717768&eventTrackingID=287449857",
+            "Zip":                   89130
+        },
+        "19": {
+            "Address":               "1316 PYRAMID DR",
+            "City":                  "LAS VEGAS",
+            "DueCompleted":          "01/21/15 2:27(-6)",
+            "State":                 "NV",
+            "Status":                "AVAILABLE",
+            "Task":                  "Monthly Marketing Report",
+            "TotalPhotos":           114,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.MonthlyMarketingReport&property_id=13019322&eventTrackingID=287795082",
+            "Zip":                   89108
+        },
+        "20": {
+            "Address":               "1412 BIG VALLEY LN",
+            "City":                  "NORTH LAS VEGAS",
+            "DueCompleted":          "01/21/15 9:31(-6)",
+            "State":                 "NV",
+            "Status":                "AVAILABLE",
+            "Task":                  "Confirm HomePath Materials",
+            "TotalPhotos":           356,
+            "Url":                   "https://agents.equator.com/index.cfm?event=event.ConfirmHomePathMaterials&property_id=12216598&eventTrackingID=287718719",
+            "Zip":                   89081
+        }
+    }
+}
