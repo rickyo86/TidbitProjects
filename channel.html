@@ -1,0 +1,51 @@
+<!doctype html>
+<html ng-app>
+<head>
+<meta charset="utf-8">
+<title>Channel Broadcast - Using Jquery Color plugin and MultiScreen.js</title>
+<link href="css/multi-screen-css.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/page.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/multi-screen.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/color/jquery.color.plus-names-2.1.2.js"></script>
+<!-- Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(
+	function() { 
+		MultiScreen.init(); 
+		$('#screen2').click(function(){
+					MultiScreen.switch_screens(
+						{
+											target_id: 'screen1', 
+											enter_animation_command: 'top', 
+											exit_animation_command: 'bottom', 
+											chain_animation_options:
+												{
+													target_id: 'screen3', 
+													enter_animation_command: 'left', 
+													exit_animation_command: 'right'
+												}
+						})
+			
+			})
+	})
+</script>
+</head>
+<body>
+<div id="screen1" class="ms-container ms-default ms-nav-link" data-ms-target="screen2">
+        <!-- screen1 content -->
+        Hello World
+    </div>
+    <div id="screen2" class="ms-container ms-nav-link">
+        <!-- screen2 content -->
+        Goodbye!
+    </div>
+    <div id="screen3" class="ms-container ms-nav-link" data-ms-target="screen1">
+        <!-- screen2 content -->
+        Hello Again!
+    </div>
+</body>
+
+</html>

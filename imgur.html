@@ -1,0 +1,51 @@
+<!doctype html>
+<html ng-app>
+<head>
+<meta charset="utf-8">
+<title>Imgur Bridge</title>
+<link rel="stylesheet" type="text/css" href="css/page.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/themes/default/style.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>
+<script type="text/javascript">
+
+var data_model
+var data_to_server = {client_id:"f24bafa5a031e2b", Authorization:"f24bafa5a031e2b", client_secret:"a60760b0dbf0365584c6cacb10900d630d456abd", grant_type:"pin"}
+$(document).ready(function(){ 
+	//$.post(auth_url, data_to_server,function(data){$('body').html(data)})			
+	$.ajax({
+		url:"https://api.imgur.com/3/gallery/hot/viral/0.json",
+		//url:"https://api.imgur.com/3/gallery/album/XC7E2.json",
+		//url:"https://api.imgur.com/oauth2/authorize?response_type=pin&client_id=f24bafa5a031e2b",
+		//url:"https://api.imgur.com/oauth2/token?response_type=pin&client_id=f24bafa5a031e2b",
+		method:"GET", //use get
+		headers:{Authorization:'Client_ID ' + 'f24bafa5a031e2b'},
+		data:{response_type:'token', client_id:'f24bafa5a031e2b', client_secret:"a60760b0dbf0365584c6cacb10900d630d456abd", grant_type:"pin"},
+		beforeSend:
+			function(jqobj){
+				jqobj.setRequestHeader('Authorization', 'Client-ID f24bafa5a031e2b' )
+				},
+		success: 
+			function(data,status,jqobj){
+				jqobj.setRequestHeader('Authorization', 'Client-ID f24bafa5a031e2b' )
+				//$('textarea').append(status + ' data ' + '\n for window ' +window.location.hash + '\n for document '+ document.location.hash);
+				//$('#imgur_auth').append(jqobj.getAllResponseHeaders())
+				data_model = jqobj.responseText
+				$('textarea').append(data_model)
+				//$('#imgur_gallery').jstree({'core':{'data':data_model}})
+			}
+		
+		})		   	
+});
+</script>
+</head>
+<body>
+<div>jQuery.post( url [, data ] [, success ] [, dataType ] )</div>
+<div>success
+Type: Function( Anything data, String textStatus, jqXHR jqXHR )</div>
+<textarea cols="80" rows="20"></textarea>
+<div id="imgur_auth"></div>
+<div id="imgur_gallery"></div>
+</body>
+
+</html>

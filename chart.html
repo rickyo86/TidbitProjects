@@ -1,0 +1,68 @@
+<!doctype html>
+<html ng-app>
+<head>
+<meta charset="utf-8">
+<title>Chart.js WebHistory Display View </title>
+<link rel="stylesheet" type="text/css" href="css/page.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/themes/default/style.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function(e){
+			var ctx = document.getElementById("my_chart").getContext("2d");
+
+		$.getJSON('models/popular_urls.json',function(jsondata){
+								
+				var data = {
+					datasets: [
+						{
+							label: "My First dataset",
+							fillColor: "rgba(220,220,220,0.2)",
+							strokeColor: "rgba(220,220,220,1)",
+							pointColor: "rgba(220,220,220,1)",
+							pointStrokeColor: "#fff",
+							pointHighlightFill: "#fff",
+							pointHighlightStroke: "rgba(220,220,220,1)",
+							data: [65, 59, 80, 81, 56, 55, 40]
+						}
+					]
+				};
+				var options = {
+					bezierCurve: true,
+					pointDot : true,
+				    pointDotRadius : 4,
+					responsive : true
+					}
+				
+					data.labels = jsondata.labelset
+					data.datasets[0].data = jsondata.dataset
+				
+				//$(".text_status").append(JSON.stringify(jsondata))
+				
+				var myLineChart = new Chart(ctx).Line(data, options);
+
+				var ctx_jquery = $("#jquery_chart").get(0).getContext("2d");
+				var myBarChart = new Chart(ctx_jquery).Bar(data,options);
+
+		})
+		
+	})	   	
+</script>
+</head>
+<body>
+<div class="text_status"><h1>Chart.js</h1></div>
+<div>
+<canvas id="my_chart"></canvas>
+</div>
+<hr/>
+<div class="text-center"><h1>Chart.js w/ Jquery</h1>
+<canvas id="jquery_chart"></canvas>
+</div>
+
+</body>
+
+</html>

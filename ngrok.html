@@ -1,0 +1,46 @@
+<!doctype html>
+<html ng-app>
+<head>
+<meta charset="utf-8">
+<title>Ngrok Bridge</title>
+<link rel="stylesheet" type="text/css" href="css/page.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/themes/default/style.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+var json_result, len, ngrok_url_status
+	$.getJSON('models/tunnels.json',(data)=>{
+			$('textarea').text(JSON.stringify(data.tunnels[0].public_url))
+		})
+	/*$.ajax({
+		url:"/models/tunnels.json",
+		method:"GET", //use get
+		beforeSend:
+			function(jqobj){
+				},
+		success: 
+			function(data,status,jqobj){
+				$('#ngrok_auth').append(jqobj.getAllResponseHeaders())
+				json_result = jqobj.responseText
+				parsed_json_result = JSON.parse(json_result)
+				json_string = JSON.stringify(parsed_json_result.tunnels[0].public_url)
+				$('#ngrok_gallery').text(json_string)
+				len = tunnels.length //tunnel length
+				ngrok_url_status =  json_result.tunnels[0].public_url
+				$('textarea').text(json_string);//+ ngrok_url_status
+
+			}
+		})		   */	
+</script>
+</head>
+<body>
+<div>jQuery.post( url [, data ] [, success ] [, dataType ] )</div>
+<div><h3>success</h3>
+</div>
+<textarea cols="40" rows="10"></textarea>
+<div id="ngrok_auth"></div>
+<div id="ngrok_gallery"></div>
+</body>
+
+</html>

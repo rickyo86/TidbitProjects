@@ -89,7 +89,7 @@ He swung his head round to see two bulbous red eyes staring at him from a nearby
        </div>
     </div>
      <div class="col-md-1 col-xs-1 right-index">
-      <div id={{b}} ng-repeat="b in ['N','O','P','Q','R','S','T','U','V','W','X','Y','Z']"><h1 class="text-center"><a>{{b}}</a></h1></div>
+      <h1 class="text-center" ng-repeat="b in ['N','O','P','Q','R','S','T','U','V','W','X','Y','Z']"><a>{{b}}</a></h1>
     </div>
   </div>
   <hr>
@@ -143,7 +143,7 @@ He swung his head round to see two bulbous red eyes staring at him from a nearby
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <!-- <script src="js/jquery-1.11.3.min.js"></script>
 
-<!-- I WON'T BE USING MOBILE JQUERY, BECAUSE IT ONLY WORK WITH JQUERY 1.6 - ANGULAR MOBILE USED INSTEAD -->
+I WON'T BE USING MOBILE JQUERY, BECAUSE IT ONLY WORK WITH JQUERY 1.6 - ANGULAR MOBILE USED INSTEAD -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
@@ -172,7 +172,7 @@ He swung his head round to see two bulbous red eyes staring at him from a nearby
 				//alert(response.data.posts.length)
 				//append rows
 				response.data.posts.forEach((val,index,arr)=>{
-					//$('#test_row').append('<div class="col-lg-4 col-md-4 col-xs-12 col-sm-12"><h3>'+val.title+'</h3>'+val.body+'</div>')
+					//$('#test_row').append('<div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 <?php echo 'flash_column';?>"><h3>'+val.title+'</h3>'+val.body+'</div>')
 					//if(counter<=4){counter++} else{ $scope.row_id++; counter = 0}
 				})
 				$scope.posts = response.data.posts //break up posts in alphabetical order
@@ -187,33 +187,22 @@ He swung his head round to see two bulbous red eyes staring at him from a nearby
   <script type="text/javascript">
 	$(document).ready((e)=>{
 		//alert("blue")
-		var hex = ['#7F3F98','#009444','#FFDE17','#F26522','#ED1C24','#21409A']//hexidecimal color
-		var random_color=function(){
-			var random_index = Math.floor(Math.random()*hex.length)
-		return hex[random_index]
-		}
-		setInterval(()=>{
-		$('.left-index,.right-index,#test-row').animate({backgroundColor: random_color()},4000)
-		//$('.right-index').animate({backgroundColor: random_color() },4000)
-		//$('#test_row').animate({backgroundColor: random_color()},4000)
-		},16000)
-		
-		
+		//setInterval(()=>{},500)
 		$('.animateBlue').hover((dataI)=>{$('.navbar-default').animate({backgroundColor:'#21409A'},1000)},(dataO)=>{$('.navbar-default').animate({backgroundColor:'#f8f8f8'},1000)})
-			$('#test_row :first-child').hover((event_in)=>{
-				var target = event_in.currentTarget
-				//var target = event_in.target
+			$('#test_row').hover((event_in)=>{
+				//var target = event_in.currentTarget
+				var target = event_in.target
 				//target = event_in.currentTarget
 				//var color = //randomColor in Array
 				//alert('hovered')
 				$(target).animate({
-					backgroundColor: random_color(),
+					backgroundColor:"#FF9600",
 					borderBottomRightRadius:20,
 					borderTopLeftRadius:20
 					},1000)
 				},(event_out)=>{
-				var target = event_out.currentTarget
-				//var target = event_out.target
+				//var target = event_out.currentTarget
+				var target = event_out.target
 
 				$(target).animate({
 					backgroundColor:"#fff",
