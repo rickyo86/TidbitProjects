@@ -16,7 +16,7 @@
 			var url ="https://api.iconfinder.com/v4/"
 			var search = "icons/search?query=arrow&count=10";
 			var req = new Request(url)
-			fetch(req).then(function(response){console.log(response)})
+			fetch(req).then(function(response){console.log(response)}).catch(e){console.error(e)}
 		</script>
 
 	
