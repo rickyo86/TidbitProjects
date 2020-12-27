@@ -15,7 +15,9 @@
 			var url ="https://api.iconfinder.com/v4/"
 			var search = "icons/search?query=arrow&count=10";
 			  var headers = new Headers()
-			headers.set("Authorization","  Bearer  ")
+			// headers.set("Authorization","  Bearer  ")
+			headers.set("X-PINGOTHER","pingpong")
+
 			headers.append('Content-Type','application/x-www-form-urlencoded')
 			var opts = {"headers":headers, "method":"GET"}
 			var req = new Request(url)
@@ -24,7 +26,6 @@
 			var url ="https://api.iconfinder.com/v4/"
  //var url = "http://reference.craigslist.org/Categories/"
 //var urlimgur = "https://api.imgur.com/3/gallery/";
-  //headers.set("X-PINGOTHER","pingpong")
 //document.location.href = url;
  //var auth = req.headers.get("authorization"); console.log(auth)
 </script>
